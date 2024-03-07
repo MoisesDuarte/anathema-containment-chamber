@@ -4,6 +4,9 @@ on:
     branches:
       - main
 
+env:
+  HUSKY: 0
+
 permissions:
   contents: read # for checkout
 
