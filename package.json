@@ -8,9 +8,12 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "lint": "eslint 'src/**/*.{js,vue}'",
+    "lint:fix": "eslint 'src/**/*.{js,vue}' --fix"
   },
   "dependencies": {
+    "@ntohq/buefy-next": "^0.1.2",
     "vue": "^3.4.19"
   },
   "devDependencies": {
@@ -19,13 +22,19 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^11.0.3",
     "@semantic-release/release-notes-generator": "^12.1.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/eslint-config-airbnb": "^8.0.0",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.22.0",
     "husky": "^9.0.11",
     "pinst": "^3.0.0",
     "semantic-release": "^23.0.2",
     "typescript": "^5.2.2",
     "vite": "^5.1.4",
+    "vite-plugin-checker": "^0.6.4",
     "vue-tsc": "^1.8.27"
   },
   "config": {
